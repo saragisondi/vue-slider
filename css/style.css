@@ -22,17 +22,17 @@
   align-items: center;
 }
 
-.slider{
-  position: relative;
-  width: 80%;
-  height: 100%;
-}
 
 .hide{
   display:none;
 }
 
-/*IMG*/
+/*SLIDER*/
+.slider{
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
 
 .slider .items-wrapper{
   width: 100%;
@@ -45,6 +45,7 @@
   object-fit: contain;
 }
 
+/*BUTTON*/
 .slider .btn-chevron{
 color:#CCCCCC ;
 background-color:black;
