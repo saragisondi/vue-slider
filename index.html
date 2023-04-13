@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vue Slider</title>
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Vue -->
@@ -21,11 +23,15 @@
 
         <div class="slider">
   
-          <button class="btn-chevron prev"><i class="fa-solid fa-chevron-up"></i></button>
-          <button class="btn-chevron next"><i class="fa-solid fa-chevron-down"></i></button>
+          <button @click="nextPrev(false)" class="btn-chevron prev"><i class="fa-solid fa-chevron-up"></i></button>
+          <button @click="nextPrev(true)" class="btn-chevron next"><i class="fa-solid fa-chevron-down"></i></button>
   
           <div class="items-wrapper">
-            <img :src="images[0]" alt="image">
+            <img  :src="images[0]" alt="image">
+            <!-- <img :src="images[1]" alt="image">
+            <img :src="images[2]" alt="image">
+            <img :src="images[3]" alt="image">
+            <img :src="images[4]" alt="image"> -->
           </div>
   
       
