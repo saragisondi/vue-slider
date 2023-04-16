@@ -12,19 +12,22 @@ createApp({
         'img/05.webp' 
       ],
       counter:0,
+      isnext:true
     
     }
   },
 
   methods:{
-    nextPrev(){
-      if (prev)this.counter++;
+    nextPrev(isNext){
+      if (isNext)this.counter++;
       else this.counter--;
   
-      if(this.counter > this.images.lenght) this. counter = 0;
+      if(this.counter === this.images.length) this. counter = 0;
       if(this.counter < 0) this.counter = this.images.lenght -1;
 
-    }
+    },
+
+
     
   }
 

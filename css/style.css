@@ -56,7 +56,7 @@ line-height: 20px;
 border-radius: 50%;
 text-align: center;
 position: absolute;
-right:50%;
+left:50%;
 transform:translateX(-50%);
 cursor: pointer;
 }
@@ -79,3 +79,39 @@ cursor: pointer;
   background-color:#CCCCCC;
   color: black;
 }
+
+/*THUMBS*/
+.thumbs{
+  position: relative;
+  width: 20%;
+  height:80%;
+  margin-left:20px ;
+}
+
+.preview{
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+}
+
+.preview img{
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  border:2px solid black;
+}
+
+.thumbs .btn-chevron{
+  color:#CCCCCC ;
+  background-color:black;
+  border-style: none;
+  width: 25px;
+  height: 25px;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  right:55%;
+  transform:translateX(-50%);
+  cursor: pointer;
+  }
