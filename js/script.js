@@ -27,8 +27,10 @@ createApp({
 
     },
 
+    previewImage(index){
+      this.counter = index;
+    }
 
-    
   }
 
 }).mount('#app')

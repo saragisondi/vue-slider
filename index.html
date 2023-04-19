@@ -35,16 +35,11 @@
         </div>
         
         <div class="thumbs">
-          
-          <button @click="nextPrev(false)" class="btn-chevron prev"><i class="fa-solid fa-chevron-up"></i></button>
-          <button @click="nextPrev(true)" class="btn-chevron next"><i class="fa-solid fa-chevron-down"></i></button>
+
           
           <div class="preview">
-            <img :src="images [0]" :alt="images">
-            <img :src="images [1]" :alt="images">
-            <img :src="images [2]" :alt="images">
-            <img :src="images [3]" :alt="images">
-            <img :src="images [4]" :alt="images">
+            <img @click="previewImage(index)"
+            v-for="(image,index) in images" :src="images [index]" :alt="images">
           </div>
           
 
